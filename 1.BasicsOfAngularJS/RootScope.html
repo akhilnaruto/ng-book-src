@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"></script>
+</head>
+
+<body>
+    <div ng-app="MyApp">
+       <h1>Hello {{name}}</h1>
+    </div>
+
+</body>
+<script>
+    angular.module('MyApp',[])
+      .run(function($rootScope){
+        $rootScope.name = "Naruto";
+      });
+</script>
+<script>
+    
+</script>
+</html>
